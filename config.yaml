@@ -1,0 +1,28 @@
+wdir: Data
+# sample name regexp:
+#	'*_1.fastq.gz' 
+#	'*_2.fastq.gz'
+
+
+threads: 8
+
+# variables for the trimming stage
+T_ILLUMINA_ADAPTORS: "/root/databases/adapter.fasta"
+T_MIN_LEN: 35
+T_QUAL_SCORE_WIN4: 15
+
+# variables forariables for Diamond
+D_PATH_DB: "/root/databases/DIAMOND/nr"
+D_EVALUE: 1e-5
+
+# variables for COGing stage
+C_PATH_DB: "/root/databases/COG/Cog_LE/Cog"
+C_EVALUE: 1e-5
+
+# variables for KEGGing stage
+K_PATH_DB: "/root/databases/Kegg/diamond_KEGGpep"
+K_EVALUE: 1e-5
+
+# variables for COGing summary
+S_LISTCOG: "/root/databases/COG/template_COGs.csv"
+S_DBCOG: "/root/databases/COG/COGnames_LE.tab"
