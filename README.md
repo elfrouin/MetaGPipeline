@@ -1,7 +1,7 @@
 # Metagenomics pipeline
 
 This step was developed with the workflow management **Snakemake** (see the DAG below). 
-The pipeline and all software dependencies were packed in a **Docker immage**. 
+The pipeline and all software dependencies were packed in a **Docker image**. 
 The only prerequisite for using this pipeline is to install the docker on your machine.
 
 
